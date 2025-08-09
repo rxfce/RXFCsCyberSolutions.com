@@ -1,0 +1,14 @@
+# YAML configuration for RXFCsCyberSolutions.com
+# This file is used to connect your website to the domain
+
+site:
+  domain: rxfcscybersolutions.com
+  root: /Users/rxfc/Documents/Coding/RXFCsCyberSolutions.com
+  index: index.html
+  ssl: true
+  redirects:
+    - from: www.rxfcscybersolutions.com
+      to: rxfcscybersolutions.com
+  error_page: 404.html
+
+# Add additional configuration as needed for your hosting provider
