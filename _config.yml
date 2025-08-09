@@ -1,15 +1,21 @@
+# Jekyll configuration for GitHub Pages
+# See https://docs.github.com/en/pages/configuring-a-custom-domain-for-your-github-pages-site
 
-# YAML configuration for RXFCsCyberSolutions.com
-# This file is used to connect your website to the domain
+# Site settings
+url: "https://rxfcscybersolutions.com"
+baseurl: ""
+title: "RXFC's Cyber Solutions"
+description: "Your hub for innovative cybersecurity and technology solutions."
 
-site:
-  domain: rxfcscybersolutions.com
-  root: /Users/rxfc/Documents/Coding/RXFCsCyberSolutions.com
-  index: index.html
-  ssl: true
-  redirects:
-    - from: www.rxfcscybersolutions.com
-      to: rxfcscybersolutions.com
-  error_page: 404.html
+# Build settings
+markdown: kramdown
+theme: minima
 
-# Add additional configuration as needed for your hosting provider
+# Exclude these files from the build
+exclude:
+  - site.yml
+  - README.md
+  - LICENSE
+
+# Enable custom domain
+# If using a CNAME file, GitHub Pages will use it automatically
