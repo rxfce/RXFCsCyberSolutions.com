@@ -1,3 +1,53 @@
+/* GitHub Projects Card Styles */
+.repo-card {
+    display: flex;
+    align-items: flex-start;
+    background: #23272f;
+    border-radius: 14px;
+    box-shadow: 0 2px 8px #0003;
+    margin: 1.5rem 0;
+    padding: 1.2rem;
+    gap: 1.5rem;
+    transition: box-shadow 0.2s;
+}
+.repo-card:hover {
+    box-shadow: 0 4px 16px #0005;
+}
+.repo-info {
+    flex: 2;
+}
+.repo-info h3 {
+    margin: 0 0 0.5rem 0;
+    font-size: 1.3rem;
+    color: #7fd1b9;
+}
+.repo-info p {
+    margin: 0 0 0.5rem 0;
+    color: #e0e0e0;
+}
+.repo-info span {
+    display: inline-block;
+    margin-right: 1rem;
+    color: #b0b0b0;
+    font-size: 0.95rem;
+}
+.repo-history {
+    margin-top: 0.5rem;
+    font-size: 0.9rem;
+    color: #888;
+}
+.repo-image {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.repo-image img {
+    max-width: 120px;
+    border-radius: 8px;
+    background: #181a20;
+    box-shadow: 0 2px 8px #0002;
+}
 /* iOS-inspired dark theme for RXFC's Cyber Solutions */
 
 body {
