@@ -77,3 +77,24 @@ footer {
     background: #181a20;
     border-top: 1px solid #23272f;
 }
+.message-embed {
+  background: #22242b;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px #0003;
+  padding: 1rem;
+  max-width: 350px;
+  margin: 1rem 0;
+}
+.message-header {
+  font-weight: bold;
+  color: #7fd1b9;
+  margin-bottom: 0.5rem;
+}
+.message-body {
+  color: #e0e0e0;
+}
+.message-embed a {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+}

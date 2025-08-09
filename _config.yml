@@ -1,0 +1,21 @@
+# Jekyll configuration for GitHub Pages
+# See https://docs.github.com/en/pages/configuring-a-custom-domain-for-your-github-pages-site
+
+# Site settings
+url: "https://rxfcscybersolutions.com"
+baseurl: "rxfce.github.io."
+title: "RXFC's Cyber Solutions"
+description: "Your hub for innovative cybersecurity and technology solutions."
+
+# Build settings
+markdown: kramdown
+theme: minima
+
+# Exclude these files from the build
+exclude:
+  - site.yml
+  - README.md
+  - LICENSE
+
+# Enable custom domain
+# If using a CNAME file, GitHub Pages will use it automatically
