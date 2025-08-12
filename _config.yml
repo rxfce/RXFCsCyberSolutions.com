@@ -3,11 +3,7 @@
 
 # Site settings
 url: "https://rxfcscybersolutions.com"
-<<<<<<< HEAD
-baseurl: "rxfce.github.io"
-=======
 baseurl: "https://rxfce.github.io/RXFCsCyberSolutions.com/"
->>>>>>> e44391ff22910143ba5332d1ea90cdbad1a57c65
 title: "RXFC's Cyber Solutions"
 description: "Your hub for innovative cybersecurity and technology solutions."
 
