@@ -1,53 +1,131 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>RXFC's Cyber Solutions</title>
-    <link rel="stylesheet" href="theme.css">
-    <script src="scripts.js" defer></script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Rxfc — Portfolio</title>
+  <meta name="description" content="Rxfc — lightweight, animated, and interactive microsite." />
+  <meta name="theme-color" content="#0b0b12" />
+  <link rel="stylesheet" href="theme.css" />
 </head>
 <body>
-    <header>
-        <h1>RXFC's Cyber Solutions</h1>
-        <nav>
-            <a href="#about">About</a>
-            <a href="#services">Services</a>
-            <a href="#projects">Projects</a>
-            <a href="#contact">Contact</a>
-        </nav>
-    </header>
-    <main>
-        <section id="about">
-            <div style="display: flex; align-items: center; gap: 2rem;">
-                <video src="./sources/Confronting Cowardice_ The Cost of Inaction.mp4" autoplay muted loop style="max-width: 320px; border-radius: 12px; box-shadow: 0 2px 16px #0003;"></video>
-                <div>
-                    <h2>About</h2>
-                    <p>Welcome to RXFC's Cyber Solutions, your hub for innovative cybersecurity and technology solutions.</p>
-                </div>
-            </div>
-            <div class="message-embed">
-                <div class="message-header">Discord App Message</div>
-                <div class="message-body">Hey! Let's chat about your cybersecurity solutions.</div>
-            </div>
-        </section>
-        <section id="services">
-            <h2>Services</h2>
-            <p>Explore our range of services including security audits, consulting, and custom software development.</p>
-        </section>
-        <section id="projects">
-            <h2>Projects</h2>
-            <p>Discover our latest projects and case studies showcasing our expertise and impact.</p>
-            <div id="github-projects"></div>
-        </section>
-        <section id="contact">
-            <h2>Contact</h2>
-            <p>We'd love to hear from you! Reach out for collaborations, inquiries, or support.</p>
-            <p>Get in touch with us for collaborations, inquiries, or support.</p>
-        </section>
-    </main>
-    <footer>
-        &copy; 2025 RXFC's Cyber Solutions. All rights reserved.
-    </footer>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header" id="top">
+    <div class="container nav-row">
+      <a href="#top" class="brand" aria-label="R's Cyber Solutions home">R's Cyber Solutions</a>
+      <button class="nav-toggle" aria-expanded="false" aria-controls="site-nav" aria-label="Toggle navigation">
+        <span class="bar"></span><span class="bar"></span><span class="bar"></span>
+      </button>
+      <nav id="site-nav" class="nav" role="navigation">
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#scripts">Scripts</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section id="hero" class="hero section reveal">
+      <div class="container hero-inner">
+        <h1 class="headline">Build Fast. Feel Safe.</h1>
+        <p class="subhead">GitHub projects, chat — and zero frameworks</p>
+        <div class="cta-row">
+          <div class="magnet-wrap">
+            <a href="#about" class="btn btn-primary magnet" data-magnet>Get started</a>
+          </div>
+          <a href="#projects" class="btn btn-ghost">View projects</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="section reveal">
+      <div class="container">
+        <h2 class="section-title">About Me</h2>
+        <div class="grid cards">
+          <article class="card">
+            <h3>Who I Am</h3>
+            <p>I am a passionate developer with a focus on creating lightweight, interactive, and visually appealing scripts and applications and just a few websites on the side.</p>
+          </article>
+          <article class="card">
+            <h3>My Mission</h3>
+            <p>To deliver high-quality, user-friendly web experiences that combine functionality with aesthetics.</p>
+          </article>
+          <article class="card">
+            <h3>My Skills</h3>
+            <p>Proficient in HTML, CSS, JavaScript, C, and Python.</p>
+          </article>
+          <article class="card">
+            <h3>My Vision</h3>
+            <p>To continuously innovate and push the boundaries of web development.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects" class="section reveal">
+      <div class="container">
+        <h2 class="section-title">Latest projects</h2>
+        <div id="repo-grid" class="grid repos" role="list" aria-live="polite" aria-busy="true"></div>
+        <p id="repo-status" class="muted" role="status" aria-live="polite"></p>
+      </div>
+    </section>
+
+    <section id="scripts" class="section reveal">
+      <div class="container rng-wrap">
+        <h2 class="section-title">Scripts</h2>
+
+        <!-- RNG Display -->
+        <div class="rng-display" aria-live="polite" aria-atomic="true">
+          <span id="rng-value">000</span>
+        </div>
+        <p id="rng-note" class="muted small" aria-live="polite"></p>
+        <div class="cta-row">
+          <div class="magnet-wrap">
+            <button id="rng-spin" class="btn btn-primary magnet" data-magnet>Spin</button>
+          </div>
+          <button id="rng-copy" class="btn btn-ghost">Copy</button>
+        </div>
+
+        <!-- Taken Username Fix -->
+        <div class="taken-username-fix">
+          <h3>Taken Username Fix</h3>
+          <input type="text" id="username-input" placeholder="Enter your word" class="username-input" aria-label="Base word for username" />
+          <div class="cta-row">
+            <button id="generate-username" class="btn btn-primary magnet" data-magnet>Generate</button>
+          </div>
+
+          <div id="generated-username-container" class="generated-username-container" aria-live="polite" hidden>
+            <span id="generated-username" class="generated-username"></span>
+            <button id="copy-username" class="btn btn-ghost">Copy</button>
+          </div>
+        </div>
+        <button id="clear-username" class="btn btn-ghost clear-button">Clear</button>
+      </div>
+    </section>
+
+    <section id="contact" class="section reveal">
+      <div class="container">
+        <h2 class="section-title">Contact</h2>
+        <p class="muted" id="chat-status">Chat loads automatically when a Crisp website ID is set.</p>
+        <p class="muted">If you have any questions or just want to say hi, feel free to reach out!</p>
+        <a href="https://discord.gg/ZpP9e9AZjA" class="btn btn-primary" target="_blank" rel="noopener noreferrer">Join my Discord</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-row">
+      <small>© <span id="year"></span> rxfce. All rights reserved.</small>
+      <a href="#top" class="top-link">Back to top ↑</a>
+    </div>
+  </footer>
+
+  <noscript>
+    <div class="noscript">This site only really works with JavaScript enabled. Most elements in the page use JS</div>
+  </noscript>
+
+  <script src="script.js" defer></script>
 </body>
 </html>
